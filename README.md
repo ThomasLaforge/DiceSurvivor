@@ -1,9 +1,8 @@
-# The Game
-Web implementation of board game : The Game
+# DiceSurvivor
 
-npm install
+Creation of dice game where the goal is to survive on an island. A Robinson Crusoe like with dice. It's my first creation of game, inspired by a big boardgames experience.
 
-Then execute gulp serve to dev or gulp build to compile the app
+To run it: npm install, then npm start
 
 You can contact me for any question about the project
 
