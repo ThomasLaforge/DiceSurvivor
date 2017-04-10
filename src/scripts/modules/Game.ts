@@ -1,7 +1,6 @@
 // imports
-    import { Card }          from './Card';
-    import { NbCardToGet }   from './TheGame'
-    import * as _            from 'lodash'
+    import { Dice }          from './Dice';
+    import {  }              from './DiceSurvivor'
 // -------
 
 class Game {
