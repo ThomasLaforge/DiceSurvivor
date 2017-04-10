@@ -1,17 +1,28 @@
+import { Face } from './Face'
 import { DiceInterface } from './DiceSurvivor';
+import * as _ from 'lodash'
 
 class Dice implements DiceInterface {
 
-    private _faces: number[];
+    private _faces: Face[];
 
-	constructor(faces: number[]) {
+	constructor(faces: Face[]) {
 		this._faces = faces;
 	}
 
-    get faces(): number[] {
+	roll(): Face{
+		this.faces = _.shuffle(this.faces)
+		return this.getFaceUp();
+	}
+
+	getFaceUp(){
+		return this.faces[0];
+	}
+
+    public get faces(): Face[] {
 		return this._faces;
 	}
-	set faces(newFaces: number[]) {
+	public set faces(newFaces: Face[]) {
 		this._faces = newFaces;
 	}
 }

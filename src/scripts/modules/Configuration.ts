@@ -1,3 +1,5 @@
+/*
+
 import * as moment from 'moment'
 moment.locale('fr', {
     months : "janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre".split("_"),
@@ -47,9 +49,9 @@ moment.locale('fr', {
     // in case the meridiem units are not separated around 12, then implement
     // this function (look at locale/id.js for an example)
     // meridiemHour : function (hour, meridiem) {
-    //     return /* 0-23 hour, given meridiem token and hour 1-12 */
+    //     return /* 0-23 hour, given meridiem token and hour 1-12 */ /*
     // },
-    meridiem : function (hours, minutes, isLower) {
+    meridiem : function (hours: number, minutes: number, isLower: boolean) {
         return hours < 12 ? 'PD' : 'MD';
     },
     week : {
@@ -59,4 +61,6 @@ moment.locale('fr', {
 });
 export {moment}
 
-export const NB_STACKS = 4;
+*/
+
+export const NB_INITIAL_DICES = 3;

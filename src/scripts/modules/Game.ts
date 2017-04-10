@@ -5,10 +5,7 @@
 
 class Game {
 
-	constructor() {
-		
-	}
-
+	constructor() {}
 	
 //------------------- 
     

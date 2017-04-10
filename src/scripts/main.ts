@@ -3,7 +3,6 @@
 
 // Model
     import { Game } from './modules/Game';
-    import { Card } from './modules/Card';
     let newGame  = new Game();
 
 // Game Config
@@ -25,9 +24,7 @@ let app = new Vue({
     el: '#app',
     data: (): { } => {
         return {
-            game : newGame,
-            selectedCard : null,
-            possibleStacks : []
+            game : newGame
         }
     },
     computed: {
