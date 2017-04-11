@@ -1,4 +1,10 @@
-export class Stuff {
+import { Item } from './Item'
+import { StuffType } from './DiceSurvivor'
 
-    private _type: StuffType;
+export class Stuff extends Item {
+
+	constructor(type: StuffType) {
+        super(type);
+	}
+    
 }
