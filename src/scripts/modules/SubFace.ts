@@ -5,7 +5,7 @@ export class SubFace {
     private _type: Resource;
     private _number: number;
 
-	constructor(type: Resource, number: number) {
+	constructor(type: Resource = new Resource() , number = 1) {
 		this._type = type;
 		this._number = number;
 	}

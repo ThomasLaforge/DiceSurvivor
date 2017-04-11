@@ -1,13 +1,14 @@
 import { Face } from './Face'
 import { DiceInterface } from './DiceSurvivor';
+import { DICE__NB_FACES } from './Configuration'
 import * as _ from 'lodash'
 
 class Dice implements DiceInterface {
 
     private _faces: Face[];
 
-	constructor(faces: Face[]) {
-		this._faces = faces;
+	constructor(faces: Face[] = new Array(DICE__NB_FACES).fill(new Face()) ) {
+		this.faces = faces;
 	}
 
 	roll(): Face{
