@@ -1,3 +1,23 @@
+import { ResourceType } from './DiceSurvivor'
+
+export const DICE_COLLECTION__INITIAL_DICE_NUMBER = 3;
+export const DICE_COllECTION__MAX_DICE_NUMBER = 5;
+export const DICE__NB_FACES = 6;
+
+export const RESOURCE__DEFAULT = ResourceType.Wood;
+
+export const HEALTH__DEFAULT_WIN = 1;
+export const HEALTH__DEFAULT_LOSE = 1;
+export const HEALTH__MIN = 0;
+export const HEALTH__MAX = 10;
+export const HEALTH__DEFAULT = HEALTH__MAX;
+
+export const HUNGER__DEFAULT_WIN = 1;
+export const HUNGER__DEFAULT_LOSE = 1;
+export const HUNGER__MIN = 0;
+export const HUNGER__MAX = 10; 
+export const HUNGER__DEFAULT = HUNGER__MAX;
+
 /*
 
 import * as moment from 'moment'
@@ -63,4 +83,3 @@ export {moment}
 
 */
 
-export const NB_INITIAL_DICES = 3;
